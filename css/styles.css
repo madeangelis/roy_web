@@ -1,0 +1,126 @@
+#fullpage {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#fullpage section img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+#fullpage section {
+    cursor: pointer;
+}
+#logo {
+    cursor: pointer;
+}
+#video {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    background-color: #0000008a;
+    overflow: hidden;
+}
+#videoImage {
+    position: relative;
+    top: 10vh;
+    left: 15vw;
+}
+.indicators {
+    position: fixed;
+    top: 40%;
+    right: 3%;
+    list-style: none;
+}
+.indicators li {
+    margin-top: 100%;
+}
+
+.indicators div {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.418);
+    border-radius: 10px;
+}
+.active div {
+    background: white;
+}
+#navbar {
+    background-color: transparent;
+    z-index: 1000;
+}
+#navbar img {
+    height: 30px;
+}
+#navbar ul {
+    list-style: none;
+    list-style-type: none;
+}
+#navbar ul li {
+    display: inline-block;
+}
+#navbar ul li a {
+    color: white;
+}
+#navbar ul li a:hover {
+    color: rgb(194, 194, 194);
+}
+#social a{
+    color: white;
+}
+#social a:hover {
+    color:rgb(194, 194, 194);
+}
+.modal-title img {
+    height: 20px;
+    width: 20px;
+}
+#about {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    width: 70%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 15px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+#about div {
+    margin-top: 8%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+}
+#about-text {
+    font-size: 0.9em;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#foto-roy {
+    background-image: url(../img/Roy.jpg);
+    background-repeat: no-repeat;
+    width: 70%;
+    position: relative;
+    
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 85%;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: rgb(219, 219, 219);
+    text-decoration: none;
+}
