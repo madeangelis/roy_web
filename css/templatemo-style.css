@@ -67,7 +67,7 @@ nav .logo a {
 }
 
 nav .logo img {
-  width: 18rem;
+  width: 28rem;
 }
 
 nav .logo em {
@@ -1342,7 +1342,7 @@ footer a:hover {
 
 @media (min-width: 530px) {
   nav .logo img {
-    width: 30rem;
+    width: 36rem;
   }
 }
 
@@ -1404,6 +1404,9 @@ footer a:hover {
 }
 
 @media (min-width: 1025px) {
+  nav .logo img {
+    width: 36rem;
+  }
   .service-item img {
     width: 80%;
   }
