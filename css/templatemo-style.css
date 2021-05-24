@@ -600,6 +600,10 @@ nav {
   outline: none;
 }
 
+.experience-container {
+  width: fit-content;
+}
+
 /* Keyframes */
 @keyframes totop-in {
   0% {
