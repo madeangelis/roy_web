@@ -76,7 +76,7 @@ nav .logo em {
 }
 
 nav {
-  background: rgba(255, 255, 255, 0.829);
+  background: rgba(255, 255, 255, 1);
   height: 80px;
   position: fixed;
   width: 100%;
