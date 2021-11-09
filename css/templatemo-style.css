@@ -68,7 +68,6 @@ nav .logo a {
 
 nav .logo img {
   width: 18rem;
-  height: fit-content;
 }
 
 nav .logo em {
@@ -1383,7 +1382,6 @@ footer a:hover {
 @media (min-width: 530px) {
   nav .logo img {
     width: 36rem;
-    height: fit-content;
   }
   .retro .content .video-wrapper {
     min-height: 300px;
@@ -1453,7 +1451,6 @@ footer a:hover {
 @media (min-width: 1025px) {
   nav .logo img {
     width: 36rem;
-    height: fit-content;
   }
   .service-item img {
     width: 80%;
