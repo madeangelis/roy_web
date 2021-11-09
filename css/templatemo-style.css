@@ -845,6 +845,7 @@ footer a:hover {
 }
 .service-item img {
   width: 100%;
+  height: 100%;
 }
 
 .services .service-item .icon img {
@@ -1371,6 +1372,7 @@ footer a:hover {
 }
 .award-wrapper img {
   width: 70%;
+  height: fit-content;
 }
 
 .award-text {
