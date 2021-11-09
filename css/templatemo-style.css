@@ -7,7 +7,7 @@ https://templatemo.com/tm-520-highway
 */
 
 body {
-  font-family: "Openn Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -607,7 +607,7 @@ nav {
 /* Keyframes */
 @keyframes totop-in {
   0% {
-    top: 600px;
+    top: 00px;
     opacity: 0;
   }
   100% {
