@@ -1429,6 +1429,10 @@ footer a:hover {
   }
 }
 
+#retro-portfolio h2{
+  padding: 2.5rem 0;
+}
+
 @media (max-width: 992px) {
   .blog-entries .blog-posts {
     margin-right: 0px;
