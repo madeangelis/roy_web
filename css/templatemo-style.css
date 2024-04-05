@@ -879,6 +879,11 @@ footer a:hover {
   height: 100%;
 }
 
+.service-item .logo {
+  width: 50px;
+  margin: auto;
+}
+
 .services .service-item .icon img {
   max-width: 100%;
 }
@@ -1458,6 +1463,10 @@ footer a:hover {
   .more-about-us .content {
     padding: 60px 30px;
   }
+}
+
+#retro-portfolio {
+  display: none;
 }
 
 #retro-portfolio h2{
