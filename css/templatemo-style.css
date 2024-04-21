@@ -186,7 +186,7 @@ nav {
   height: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  width: 100%;
+  width: 30%;
   padding: 50px 0;
   opacity: 0;
   text-align: center;
@@ -197,6 +197,7 @@ nav {
 .overlay-menu.open {
   opacity: 1;
   transform: translateY(0%);
+  width: 30%;
 }
 
 .overlay-menu .main-menu {
@@ -211,6 +212,10 @@ nav {
   transition-delay: 0.7s;
   opacity: 1;
   transform: translateY(0%);
+}
+
+.overlay-menu.open .container {
+  width: 30%;
 }
 
 .overlay-menu .main-menu:nth-child(2) {
@@ -1166,7 +1171,33 @@ footer a:hover {
   background-color: #414141;
   transition: all 0.5s;
 }
+.navbar {
+  margin-bottom: 0 !important;
+}
+.navbar-collapse.collapsing {
+  background-color: #fff !important;
+}
+.navbar-collapse.collapse.in {
+  background-color: #fff !important;
+}
+.navbar-text span {
+  padding-left: 0.5rem;
+}
+.active a {
+  border-radius: 20px !important;
+}
+.nav.navbar-nav li a:hover {
+  border-radius: 20px !important;
+  background-color: #d7d7d7;
+}
+.navbar-toggle {
+  margin-top: 20px;
+}
 
+a.navbar-text:hover {
+  border-radius: 50px !important;
+  background-color: #f5f7fc;
+}
 .blog-entries .page-number li a:hover {
   opacity: 0.5;
 }
@@ -1500,9 +1531,15 @@ footer a:hover {
   nav .logo img {
     width: 36rem;
   }
-  .service-item img {
-    width: 80%;
+  .service-item .portfolio-image {
+    width: auto;
+    height: auto;
+    background-image: url("../img/roy.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
   }
+
   .retro .content .video-wrapper {
     width: 100%;
     min-height: 510px;
