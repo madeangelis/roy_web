@@ -370,7 +370,7 @@ nav {
 }
 
 #portfolio {
-  margin-top: 8rem;
+  margin-top: 0.1rem;
 }
 
 .full-screen-portfolio .container-fluid,
@@ -1173,6 +1173,8 @@ footer a:hover {
 }
 .navbar {
   margin-bottom: 0 !important;
+  border-radius: 0 !important;
+  border: 1px solid #fff !important;
 }
 .navbar-collapse.collapsing {
   background-color: #fff !important;
@@ -1185,10 +1187,14 @@ footer a:hover {
 }
 .active a {
   border-radius: 20px !important;
+  background-image: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  font-weight: bolder;
 }
 .nav.navbar-nav li a:hover {
   border-radius: 20px !important;
-  background-color: #d7d7d7;
+  font-weight: 900;
 }
 .navbar-toggle {
   margin-top: 20px;
