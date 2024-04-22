@@ -10,6 +10,15 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+body.trabajos {
+  background-color: #313131;
+}
+
+body.trabajos h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
 body::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -25,6 +34,28 @@ html {
   height: 100%;
   min-height: 100%;
   overflow-x: hidden;
+}
+
+#home-body {
+  width: 100%;
+  height: 100%;
+  background-color: #313131;
+  color: #fff;
+}
+
+#home-body .d-flex {
+  height: 100%;
+}
+
+#home-body h1 {
+  font-size: 56px;
+}
+
+#home-body span {
+  margin-top: 1.5rem;
+  font-size: 30px;
+  text-decoration: none;
+  color: azure;
 }
 
 .page-heading {
@@ -155,7 +186,7 @@ nav {
   height: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  width: 100%;
+  width: 30%;
   padding: 50px 0;
   opacity: 0;
   text-align: center;
@@ -166,6 +197,7 @@ nav {
 .overlay-menu.open {
   opacity: 1;
   transform: translateY(0%);
+  width: 30%;
 }
 
 .overlay-menu .main-menu {
@@ -180,6 +212,10 @@ nav {
   transition-delay: 0.7s;
   opacity: 1;
   transform: translateY(0%);
+}
+
+.overlay-menu.open .container {
+  width: 30%;
 }
 
 .overlay-menu .main-menu:nth-child(2) {
@@ -334,7 +370,7 @@ nav {
 }
 
 #portfolio {
-  margin-top: 8rem;
+  margin-top: 0.1rem;
 }
 
 .full-screen-portfolio .container-fluid,
@@ -848,6 +884,11 @@ footer a:hover {
   height: 100%;
 }
 
+.service-item .logo {
+  width: 50px;
+  margin: auto;
+}
+
 .services .service-item .icon img {
   max-width: 100%;
 }
@@ -1130,7 +1171,39 @@ footer a:hover {
   background-color: #414141;
   transition: all 0.5s;
 }
+.navbar {
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+  border: 1px solid #fff !important;
+}
+.navbar-collapse.collapsing {
+  background-color: #fff !important;
+}
+.navbar-collapse.collapse.in {
+  background-color: #fff !important;
+}
+.navbar-text span {
+  padding-left: 0.5rem;
+}
+.active a {
+  border-radius: 20px !important;
+  background-image: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  font-weight: bolder;
+}
+.nav.navbar-nav li a:hover {
+  border-radius: 20px !important;
+  font-weight: 900;
+}
+.navbar-toggle {
+  margin-top: 20px;
+}
 
+a.navbar-text:hover {
+  border-radius: 50px !important;
+  background-color: #f5f7fc;
+}
 .blog-entries .page-number li a:hover {
   opacity: 0.5;
 }
@@ -1429,6 +1502,14 @@ footer a:hover {
   }
 }
 
+#retro-portfolio {
+  display: none;
+}
+
+#retro-portfolio h2{
+  padding: 2.5rem 0;
+}
+
 @media (max-width: 992px) {
   .blog-entries .blog-posts {
     margin-right: 0px;
@@ -1456,9 +1537,15 @@ footer a:hover {
   nav .logo img {
     width: 36rem;
   }
-  .service-item img {
-    width: 80%;
+  .service-item .portfolio-image {
+    width: auto;
+    height: auto;
+    background-image: url("../img/roy.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
   }
+
   .retro .content .video-wrapper {
     width: 100%;
     min-height: 510px;
