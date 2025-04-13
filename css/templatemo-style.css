@@ -1440,6 +1440,10 @@ a.navbar-text:hover {
   margin-bottom: 5rem;
 }
 
+.awards h2 {
+  font-size: 34px;
+}
+
 .award-wrapper {
   width: 100%;
   height: 100%;
@@ -1452,17 +1456,34 @@ a.navbar-text:hover {
   border-radius: 25px;
 }
 
+
+
 .award-text {
   padding-top: 3rem;
 }
 
-.service-item .portfolio-image {
+.service-item {
+
+}
+
+.service-item .portfolio-image-mobile {
   width: 100%;
-  height: 25rem;
-  background-image: url("../img/roy.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  height: auto;
+}
+.service-item .portfolio-image-desktop {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+em a {
+  color: #d86b5c;
+  text-decoration: none;
+}
+
+em a:hover{
+  color: #d14e3d;
+  text-decoration: none;
 }
 
 @media (min-width: 530px) {
@@ -1519,6 +1540,31 @@ a.navbar-text:hover {
   padding: 2.5rem 0;
 }
 
+@media (min-width: 992px) {
+  .service-item-image {
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-item-image .portfolio-image-mobile {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  .service-item-image .portfolio-image-desktop {
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+    object-position: top center;
+      -webkit-transform: scale(-1, 1);
+      -moz-transform: scale(-1, 1);
+      -o-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+  }
+}
 @media (max-width: 992px) {
   .blog-entries .blog-posts {
     margin-right: 0px;
