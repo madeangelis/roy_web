@@ -85,7 +85,6 @@ html {
 
 nav .logo {
   float: left;
-  margin-left: 30px;
 }
 
 nav .logo a {
@@ -98,7 +97,8 @@ nav .logo a {
 }
 
 nav .logo img {
-  width: 18rem;
+  width: 25rem;
+  margin-bottom: 1.4rem;
 }
 
 nav .logo em {
