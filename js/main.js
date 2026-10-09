@@ -67,25 +67,19 @@ jQuery(document).ready(function ($) {
 
 var baseVideo = "https://www.youtube.com/embed/";
 
-$(".portfolio-item").click(function () {
-  console.log("click");
+function closeVideo() {
+  $("#video").addClass("invisible");
+  $("#video iframe").attr("src", "");
+}
+
+// Delegado: funciona con los items generados por js/render.js
+$(document).on("click", ".portfolio-item", function () {
   var video = $(this).data("video");
-  $("#video iframe").attr("src", baseVideo + video);
+  $("#video iframe").attr("src", baseVideo + video + "?rel=0");
   $("#video").removeClass("invisible");
-  $("#about").addClass("invisible");
 });
 
-$("#video").click(function () {
-  $("#video").addClass("invisible");
-  $("#video iframe").attr("src", "");
-  $("#about").addClass("invisible");
-});
-
-$("#videoImage").click(function () {
-  $("#video").addClass("invisible");
-  $("#video iframe").attr("src", "");
-  $("#about").addClass("invisible");
-});
+$("#video").on("click", closeVideo);
 
 // Print year
 const d = new Date();
